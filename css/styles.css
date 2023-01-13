@@ -1,0 +1,20 @@
+h1{
+    font-family: 'Montserrat-Black', sans-serif;
+    size: 3rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    color : var(--bs-white);
+}
+
+.navbar-brand{
+    font-family: 'Sacramento', cursive;
+    font-size: x-large;
+}
+
+.container-fluid{
+    padding:3% 15%;
+}
+
+#title{
+    background-color:#ff4c68
+}
