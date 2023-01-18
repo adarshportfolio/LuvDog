@@ -1,57 +1,74 @@
-body{
- font-family: "Montserrat";
+body {
+    font-family: "Montserrat";
+    text-align: center;
 }
 
-.title-area{
-height: 21rem;
+
+/* Refactoring */
+
+/* h1, h2, h3, h4, h5{
+    
+} */
+
+/* .big-heading{}
+   .section-heading{}
+*/
+
+.title-area {
+    height: 21rem;
 }
 
-h1{
-    font-family: 'Montserrat-Black', sans-serif;
+h1 {
+    font-family: 'Montserrat ', sans-serif;
     font-size: 3rem;
     line-height: 1.5;
     font-weight: bolder;
+    text-align: left;
     /* color : var(--bs-white); */
 }
 
-.container-fluid{
-    padding: 3% 15% 6% 15%;
+#title .container-fluid{
+    padding: 2% 15% 7%;
 }
 
-#title{
-    background-color:#ff4c68;
+.container-fluid {
+    padding: 7% 15%;
+}
+
+#title {
+    background-color: #ff4c68;
     color: #fff;
 }
 
 /* Navigation bar */
-.navbar-brand{
+.navbar-brand {
     font-family: 'Sacramento', cursive;
     font-size: 2rem;
     font-weight: bold;
     /* padding-bottom: 4.5rem; */
 }
 
-.navbar{
+.navbar {
     /* padding-bottom: 4.5rem; */
     padding: 0 0 4.5rem;
     /* top left&right bottom */
 }
 
-.nav-item{
+.nav-item {
     padding: 0 15px;
 }
 
-.nav-link{
+.nav-link {
     font-size: 1.2rem;
     /* font-family: "Montserrat-Light"; */
 }
 
-.container{
+.container {
     padding: 0;
 }
 
 /* Download buttons */
-.download-button{
+.download-button {
     margin: 3% 5% 0% 5%;
     font-size: medium;
     font-weight: lighter;
@@ -63,101 +80,103 @@ h1{
 
 
 /* icons */
-.feature-box{
-text-align: center;
-line-height: 2;
-padding: 4.5%;
+.feature-box {
+    /* text-align: center; */
+    line-height: 2;
+    padding: 4.5%;
 }
 
-.feature-box h3{
+.feature-box h3 {
     font-family: "Montserrat";
-   margin-top: 30px;
-   font-size: 1.5rem; 
+    margin-top: 30px;
+    font-size: 1.5rem;
 }
 
-.feature-box p{
+.feature-box p {
     color: #8f8f8f;
     font-size: 1rem;
 }
 
-.fa-solid{
+.fa-solid {
     color: #ef8172;
     margin-bottom: 1rem;
 
 }
 
-.fa-solid:hover{
+.fa-solid:hover {
     color: #ff4c68;
 }
 
 
 /* Testimonials */
 
-#testimonials{
+#testimonials {
     /* padding: 7% 15%; */
-    text-align: center;
+    /* text-align: center; */
     background-color: #ef8172;
     color: #fff;
 }
 
-.carousel-item{
+.carousel-item {
     padding: 7% 15%;
 }
 
-#testimonials h2{
+#testimonials h2 {
     font-size: 1.5rem;
     font-family: "Montserrat";
     line-height: 2;
 
 }
-.testimonial-image{
-    border-radius: 100%;   
+
+.testimonial-image {
+    border-radius: 100%;
     width: 10%;
     margin: 20px;
 }
 
-#press{
-    text-align: center;
+#press {
+    /* text-align: center; */
     padding-bottom: 3%;
     background-color: #ef8172;
 }
 
-.press-logo{
+.press-logo {
     width: 15%;
     margin: 20px 20px 50px;
 }
 
 /* Card Button */
-.btn-outline-primary{
+.btn-outline-primary {
     color: #ff4c68;
     border-color: #ff4c68;
 }
 
-.btn-outline-primary:hover{
+.btn-outline-primary:hover {
     color: #fff;
     background-color: #ff4c68;
     border-color: #fff;
 }
+
 /* second card button */
-.btn-primary{
+.btn-primary {
     background-color: #ef8172;
     border-color: #ef8172;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #ff4c68;
     border-color: #ff4c68;
 }
 
 /* Pricing section */
 
-#pricing{
+#pricing {
     padding: 100px;
 }
 
-.pricing-column{
+.pricing-column {
     padding: 3% 2%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* Z-index place the phone image behind the features section */
@@ -167,8 +186,7 @@ padding: 4.5%;
 } */
 
 /* Now we need to give color as white to the features section other wise it is transparent*/
-#features{
-    padding: 7% 15%;
+#features {
     background-color: #fff;
     position: relative;
     /* since we dont need the features section to get out of flow */
@@ -176,7 +194,7 @@ padding: 4.5%;
 }
 
 /* Title Image */
-.title-image{
+.title-image {
     width: 60%;
     /* Now to rotate the phone image transform: rotate(3.142rad); */
     transform: rotate(25deg);
@@ -191,18 +209,51 @@ padding: 4.5%;
 /* Using MEDIA QUERY */
 /* Our aim is to make the phone static @ phone width and also to rotate the phone back to straight */
 
-@media (max-width: 998px){
-    .title-image{
+@media (max-width: 998px) {
+
+    #title{
+        text-align: center;
+    }
+
+    .title-image {
         position: static;
         transform: rotate(0);
         /* rotate back to straight */
         padding: 7% 5%;
     }
-    .title-area{
-        height: 20%;
-        }
 
-    #title{
-        text-align: center;
-    }   
+    .title-area {
+        height: 20%;
+    }
+
+}
+
+/* Call to action */
+#cta {
+    padding: 7% 15%;
+    background-color: #ff4c68;
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+.space{
+    /* button logo spacing */
+    padding: 0 10px 0 0;
+}
+/* Footer */
+#footer {
+    padding: 5% 15%;
+    /* text-align: center; */
+    background-color: #fff;
+}
+
+#footer p {
+    font-size: x-small;
+    color: #8f8f8f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.elm{
+    padding: 1%;
 }
