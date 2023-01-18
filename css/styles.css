@@ -1,21 +1,38 @@
 body {
     font-family: "Montserrat";
+    text-align: center;
 }
+
+
+/* Refactoring */
+
+/* h1, h2, h3, h4, h5{
+    
+} */
+
+/* .big-heading{}
+   .section-heading{}
+*/
 
 .title-area {
     height: 21rem;
 }
 
 h1 {
-    font-family: 'Montserrat-Black', sans-serif;
+    font-family: 'Montserrat ', sans-serif;
     font-size: 3rem;
     line-height: 1.5;
     font-weight: bolder;
+    text-align: left;
     /* color : var(--bs-white); */
 }
 
+#title .container-fluid{
+    padding: 2% 15% 7%;
+}
+
 .container-fluid {
-    padding: 3% 15% 6% 15%;
+    padding: 7% 15%;
 }
 
 #title {
@@ -64,7 +81,7 @@ h1 {
 
 /* icons */
 .feature-box {
-    text-align: center;
+    /* text-align: center; */
     line-height: 2;
     padding: 4.5%;
 }
@@ -95,7 +112,7 @@ h1 {
 
 #testimonials {
     /* padding: 7% 15%; */
-    text-align: center;
+    /* text-align: center; */
     background-color: #ef8172;
     color: #fff;
 }
@@ -118,7 +135,7 @@ h1 {
 }
 
 #press {
-    text-align: center;
+    /* text-align: center; */
     padding-bottom: 3%;
     background-color: #ef8172;
 }
@@ -159,7 +176,7 @@ h1 {
 
 .pricing-column {
     padding: 3% 2%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* Z-index place the phone image behind the features section */
@@ -170,7 +187,6 @@ h1 {
 
 /* Now we need to give color as white to the features section other wise it is transparent*/
 #features {
-    padding: 7% 15%;
     background-color: #fff;
     position: relative;
     /* since we dont need the features section to get out of flow */
@@ -194,6 +210,11 @@ h1 {
 /* Our aim is to make the phone static @ phone width and also to rotate the phone back to straight */
 
 @media (max-width: 998px) {
+
+    #title{
+        text-align: center;
+    }
+
     .title-image {
         position: static;
         transform: rotate(0);
@@ -205,9 +226,6 @@ h1 {
         height: 20%;
     }
 
-    #title {
-        text-align: center;
-    }
 }
 
 /* Call to action */
@@ -226,7 +244,7 @@ h1 {
 /* Footer */
 #footer {
     padding: 5% 15%;
-    text-align: center;
+    /* text-align: center; */
     background-color: #fff;
 }
 
