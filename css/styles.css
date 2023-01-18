@@ -129,3 +129,36 @@ padding: 4.5%;
     width: 15%;
     margin: 20px 20px 50px;
 }
+
+/* Card Button */
+.btn-outline-primary{
+    color: #ff4c68;
+    border-color: #ff4c68;
+}
+
+.btn-outline-primary:hover{
+    color: #fff;
+    background-color: #ff4c68;
+    border-color: #fff;
+}
+/* second card button */
+.btn-primary{
+    background-color: #ef8172;
+    border-color: #ef8172;
+}
+
+.btn-primary:hover{
+    background-color: #ff4c68;
+    border-color: #ff4c68;
+}
+
+/* Pricing section */
+
+#pricing{
+    padding: 100px;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+    text-align: center;
+}
